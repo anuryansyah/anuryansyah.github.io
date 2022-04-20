@@ -24,7 +24,6 @@ body {
 
 h2 {
   color: #ff0066;
-  border-bottom: 3px solid #ff0066;
   font-size: 2rem !important;
   font-weight: 400 !important;
   padding-bottom: 0.5rem;
@@ -32,7 +31,7 @@ h2 {
 
 .bg-container {
   background: rgba(54, 54, 95, 0.2);
-  border-radius: 16px;
+  border-radius: 10px;
   -webkit-box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
           box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(54, 54, 95, 0.3);
@@ -265,69 +264,60 @@ nav .hamburger .line:nth-child(2) {
   font-weight: 300;
   font-size: 1.1rem;
   text-align: justify;
-  width: 30%;
+  width: 35%;
 }
 
 #resume {
-  min-height: 90vh;
-  font-weight: 400;
+  min-height: 75vh;
 }
 
-#resume .container-timeline {
-  width: 90%;
+.timeline-left {
+  border-right: 2px solid #ff0066 !important;
 }
 
-#resume .container-timeline .timeline {
-  width: 100%;
+.timeline-right {
+  border-left: 2px solid #ff0066 !important;
 }
 
-#resume .container-timeline .timeline .timeline-left,
-#resume .container-timeline .timeline .timeline-right {
-  padding: 20px 20px;
+.timeline-left p,
+.timeline-right p {
+  margin: 0;
 }
 
-#resume .container-timeline .timeline .timeline-left .time,
-#resume .container-timeline .timeline .timeline-right .time {
-  font-size: 0.8rem;
+.timeline-left .timeline-title,
+.timeline-right .timeline-title {
+  font-size: 1.2rem;
+}
+
+.timeline-left .time,
+.timeline-right .time {
+  font-size: 0.9rem;
   font-weight: 300;
 }
 
-#resume .container-timeline .timeline .timeline-left .major,
-#resume .container-timeline .timeline .timeline-right .major {
+.timeline-left .major,
+.timeline-right .major {
   font-size: 1.5rem;
   margin: 0.3rem 0;
 }
 
-#resume .container-timeline .timeline .timeline-left .place,
-#resume .container-timeline .timeline .timeline-right .place {
+.timeline-left .place,
+.timeline-right .place {
   font-size: 1rem;
   font-weight: 300;
 }
 
-#resume .container-timeline .timeline .timeline-left {
-  border-right: 2px solid #ff0066;
-  border-radius: 16px;
-}
-
-#resume .container-timeline .timeline .timeline-right {
-  border-left: 2px solid #ff0066;
-  border-radius: 16px;
-}
-
-#resume .container-timeline .timeline .content-title {
-  font-size: 1.2rem;
-  margin-top: 20px;
-}
-
-#resume .container-timeline .timeline .content-left,
-#resume .container-timeline .timeline .content-right {
+.timeline-left .content-left,
+.timeline-left .content-right,
+.timeline-right .content-left,
+.timeline-right .content-right {
   position: relative;
-  margin-bottom: 2rem;
-  border-radius: 16px;
 }
 
-#resume .container-timeline .timeline .content-left::before,
-#resume .container-timeline .timeline .content-right::before {
+.timeline-left .content-left::before,
+.timeline-left .content-right::before,
+.timeline-right .content-left::before,
+.timeline-right .content-right::before {
   content: '';
   position: absolute;
   width: 15px;
@@ -336,48 +326,36 @@ nav .hamburger .line:nth-child(2) {
   border: 2px solid #ff0066;
   border-radius: 50%;
   background-color: #1a1a40;
-  top: 35%;
+  top: 39%;
 }
 
-#resume .container-timeline .timeline .content-left::before {
-  right: -4.8rem;
+.timeline-left .content-left::before,
+.timeline-right .content-left::before {
+  right: -3.5rem;
 }
 
-#resume .container-timeline .timeline .content-right::before {
-  left: -4.8rem;
+.timeline-left .content-right::before,
+.timeline-right .content-right::before {
+  left: -3.5rem;
 }
 
-#resume p {
-  margin: 0;
-}
-
-#portfolio {
-  min-height: 80vh;
-}
-
-#portfolio .container .card-container .card-item {
+.card-item {
   width: 18rem;
   height: 24rem;
   border-radius: 0;
-  margin-bottom: 3rem;
-  -webkit-transition: all 0.4s ease-in-out;
-  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
-#portfolio .container .card-container .card-item img {
+.card-item img {
   max-width: 15rem;
 }
 
-#portfolio .container .card-container .card-item h4 {
-  font-size: 1.6rem;
+.card-item h4 {
   font-weight: 400;
 }
 
-#portfolio .container .card-container .card-item p {
-  font-size: 1rem;
-}
-
-#portfolio .container .card-item:hover {
+.card-item:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -424,15 +402,8 @@ nav .hamburger .line:nth-child(2) {
             flex-direction: column;
   }
   #about .container .about-p p {
-    margin: 2rem;
     width: 90%;
     text-align: justify;
-  }
-  #resume .container .timeline {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
   }
 }
 
@@ -464,15 +435,6 @@ nav .hamburger .line:nth-child(2) {
   }
   .hero-section .icon-scroll {
     display: none;
-  }
-  .container .timeline {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .container .content-left::before {
-    right: -5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */
