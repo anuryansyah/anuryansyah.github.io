@@ -17,7 +17,7 @@ particlesJS(
   {
     particles: {
       number: {
-        value: 6,
+        value: 4,
         density: {
           enable: true,
           value_area: 800,
@@ -36,7 +36,7 @@ particlesJS(
           nb_sides: 5,
         },
         image: {
-          src: '../img/heart.png',
+          src: '../img/x.png',
           width: 100,
           height: 100,
         },
