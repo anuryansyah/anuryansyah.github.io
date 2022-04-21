@@ -71,5 +71,5 @@ var typed = new Typed('.typed', {
 
 // AOS JS
 AOS.init({
-  duration: 700,
+  duration: 900,
 });

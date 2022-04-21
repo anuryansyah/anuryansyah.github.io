@@ -18,17 +18,17 @@ body {
   background-color: $bg-color;
   overflow-x: hidden;
 
-  user-select: none; /* supported by Chrome and Opera */
-  -webkit-user-select: none; /* Safari */
-  -khtml-user-select: none; /* Konqueror HTML */
-  -moz-user-select: none; /* Firefox */
-  -ms-user-select: none; /* Internet Explorer/Edge */
+  // user-select: none; /* supported by Chrome and Opera */
+  // -webkit-user-select: none; /* Safari */
+  // -khtml-user-select: none; /* Konqueror HTML */
+  // -moz-user-select: none; /* Firefox */
+  // -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 h2 {
   color: $first-color;
   font-size: 2rem !important;
-  font-weight: 300 !important;
+  font-weight: 500 !important;
   padding-bottom: 0.5rem;
 }
 
@@ -37,12 +37,17 @@ h2 {
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   border: 1px solid rgba(54, 54, 95, 0.3);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
-.bg-card {
-  background: rgba(54, 54, 95, 0.2);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(54, 54, 95, 0.3);
+
+// Particle
+#particles-js {
+  width: 100%;
+  position: fixed;
+  z-index: -999;
 }
+// Akhir Particle
 
 // Tombol
 .cta {
@@ -165,7 +170,7 @@ nav {
     h1 {
       // font-size: 3.5rem;
       letter-spacing: 0.1rem;
-      font-weight: 500;
+      font-weight: 700;
 
       span {
         color: $first-color;
@@ -176,6 +181,7 @@ nav {
 
       span {
         color: $first-color;
+        font-weight: 700;
       }
     }
   }
