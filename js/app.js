@@ -61,7 +61,7 @@ window.addEventListener('scroll', () => {
 // Typed JS
 var typed = new Typed('.typed', {
   strings: ['Junior Programmer', 'Student', 'Normal Human'],
-  typeSpeed: 70,
+  typeSpeed: 100,
   backSpeed: 40,
   backDelay: 900,
   cursorChar: '_',
