@@ -69,12 +69,12 @@ var typed = new Typed('.typed', {
 });
 // Akhir Typed JS
 
-// AOS JS
-AOS.init({
-  duration: 900,
-  offset: 100,
-  // delay: 1000,
-});
+// // AOS JS
+// AOS.init({
+//   duration: 900,
+//   offset: 100,
+//   // delay: 1000,
+// });
 
 window.sr = ScrollReveal({ reset: true });
 sr.reveal('.about-p, .card-item, .skill', { origin: 'bottom', distance: '250px', duration: 1000, delay: 100 });
