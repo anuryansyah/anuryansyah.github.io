@@ -75,3 +75,8 @@ AOS.init({
   offset: 100,
   // delay: 1000,
 });
+
+window.sr = ScrollReveal({ reset: true });
+sr.reveal('.about-p, .card-item, .skill', { origin: 'bottom', distance: '250px', duration: 1000, delay: 100 });
+sr.reveal('.timeline-left', { origin: 'left', distance: '200px', duration: 1000, delay: 100 });
+sr.reveal('.timeline-right', { origin: 'right', distance: '200px', duration: 1000, delay: 100 });
