@@ -335,8 +335,14 @@ nav {
 .card-item:hover {
   transform: scale(1.1);
 }
+// Akhir Portfolio Section
 
-#skills,
+// Skill Section
+#skills {
+  min-height: 75vh;
+}
+// Akhir Skill Section
+
 #contact {
   width: 100%;
   height: 100vh;
