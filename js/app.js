@@ -69,9 +69,9 @@ var typed = new Typed('.typed', {
 });
 // Akhir Typed JS
 
-// // AOS JS
-// AOS.init({
-//   duration: 900,
-//   offset: 100,
-//   // delay: 1000,
-// });
+// AOS JS
+AOS.init({
+  duration: 900,
+  offset: 100,
+  // delay: 1000,
+});
