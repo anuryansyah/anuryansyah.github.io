@@ -375,7 +375,7 @@ nav {
   #about {
     .container {
       .about-p {
-        flex-direction: column;
+        flex-direction: column !important;
         p {
           width: 90%;
           text-align: justify;

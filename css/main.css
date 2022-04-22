@@ -404,10 +404,10 @@ nav .hamburger .line:nth-child(2) {
     display: none;
   }
   #about .container .about-p {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
   }
   #about .container .about-p p {
     width: 90%;
