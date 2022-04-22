@@ -363,13 +363,19 @@ nav .hamburger .line:nth-child(2) {
   font-weight: 400;
 }
 
-.card-item:hover {
+.card-item:hover,
+.skill:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 #skills {
   min-height: 75vh;
+}
+
+#skills .skill {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 #contact {

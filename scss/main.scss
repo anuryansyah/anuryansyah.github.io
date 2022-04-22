@@ -332,7 +332,8 @@ nav {
     font-weight: 400;
   }
 }
-.card-item:hover {
+.card-item:hover,
+.skill:hover {
   transform: scale(1.1);
 }
 // Akhir Portfolio Section
@@ -340,6 +341,10 @@ nav {
 // Skill Section
 #skills {
   min-height: 75vh;
+
+  .skill {
+    transition: all 0.2s ease-in-out;
+  }
 }
 // Akhir Skill Section
 
