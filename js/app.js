@@ -72,7 +72,7 @@ var typed = new Typed('.typed', {
 // AOS JS
 AOS.init({
   duration: 900,
-  offset: 100,
-  once: true,
+  offset: 200,
+  // once: true,
   // delay: 1000,
 });

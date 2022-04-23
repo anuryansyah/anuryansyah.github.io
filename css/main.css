@@ -275,7 +275,7 @@ nav .hamburger .line:nth-child(2) {
 }
 
 #resume {
-  min-height: 75vh;
+  min-height: 80vh;
 }
 
 .timeline-left {
@@ -349,7 +349,6 @@ nav .hamburger .line:nth-child(2) {
 .card-item {
   width: 18rem;
   height: 24rem;
-  border-radius: 0;
   border-bottom: 2px solid #ff0066;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -363,8 +362,7 @@ nav .hamburger .line:nth-child(2) {
   font-weight: 400;
 }
 
-.card-item:hover,
-.skill:hover {
+.card-item:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
@@ -378,9 +376,142 @@ nav .hamburger .line:nth-child(2) {
   transition: all 0.2s ease-in-out;
 }
 
+#skills .skill:hover {
+  background-color: #ff0066;
+}
+
 #contact {
+  min-height: 75vh;
+}
+
+#contact input,
+#contact textarea {
+  outline: 0;
+  background-color: transparent;
+  color: #e8e8ed;
+  border-bottom: 2px solid #ff0066;
+  border-top-style: hidden;
+  border-right-style: hidden;
+  border-left-style: hidden;
+}
+
+#contact input:-webkit-autofill,
+#contact input:-webkit-autofill:focus {
+  -webkit-box-shadow: 0 0 0 1000px #ff0066 inset;
+          box-shadow: 0 0 0 1000px #ff0066 inset;
+  -webkit-text-fill-color: #e8e8ed !important;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+  background-color: transparent;
+}
+
+#contact input::-webkit-input-placeholder,
+#contact textarea::-webkit-input-placeholder {
+  color: #e8e8ed;
+  opacity: 0.8;
+}
+
+#contact input:-ms-input-placeholder,
+#contact textarea:-ms-input-placeholder {
+  color: #e8e8ed;
+  opacity: 0.8;
+}
+
+#contact input::-ms-input-placeholder,
+#contact textarea::-ms-input-placeholder {
+  color: #e8e8ed;
+  opacity: 0.8;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #e8e8ed;
+  opacity: 0.8;
+}
+
+#contact textarea {
   width: 100%;
-  height: 100vh;
+  height: 100px;
+}
+
+#contact .submit {
+  width: 200px;
+  height: 55px;
+  color: #ff0066;
+  font-size: 1.2rem;
+  font-weight: 400;
+  -webkit-box-shadow: inset 0 0 0 0 #ff0066;
+          box-shadow: inset 0 0 0 0 #ff0066;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact .submit:hover {
+  color: #12122c;
+  -webkit-box-shadow: inset 0 -500px 0 0 #ff0066;
+          box-shadow: inset 0 -500px 0 0 #ff0066;
+}
+
+#contact .contact-icon {
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+  font-size: 3rem;
+  color: #ff0066;
+  -webkit-box-shadow: inset 0 0 0 0 #ff0066;
+          box-shadow: inset 0 0 0 0 #ff0066;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+#contact .contact-icon:hover {
+  background-color: #ff0066;
+  color: #12122c;
+  -webkit-box-shadow: inset 0 -500px 0 0 #ff0066;
+          box-shadow: inset 0 -500px 0 0 #ff0066;
+}
+
+#footer {
+  height: 30vh;
+}
+
+#footer .footer-container .social-media {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid #ff0066;
+  border-radius: 50%;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#footer .footer-container .social-media:hover {
+  background-color: #ff0066;
+}
+
+#footer .footer-container .social-media:hover a {
+  color: #12122c;
+}
+
+#footer .footer-container .social-media a {
+  font-size: 2rem;
+  color: #ff0066;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#footer .copyright p {
+  font-size: 1.1rem;
+}
+
+#footer .copyright p i {
+  color: #ff0066;
+}
+
+#footer .copyright p span {
+  font-weight: 600;
+  color: #ff0066;
 }
 
 @media screen and (max-width: 767px) {
@@ -421,6 +552,18 @@ nav .hamburger .line:nth-child(2) {
   #about .container .about-p p {
     width: 100%;
     text-align: justify;
+  }
+  .form-container {
+    margin-bottom: 2rem;
+  }
+  .contact-container {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+  }
+  .contact-container .contact-icon {
+    margin: 0 !important;
   }
 }
 

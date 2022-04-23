@@ -258,7 +258,7 @@ nav {
 
 // Resume Section
 #resume {
-  min-height: 75vh;
+  min-height: 80vh;
 }
 .timeline-left {
   border-right: 2px solid $first-color !important;
@@ -320,7 +320,7 @@ nav {
 .card-item {
   width: 18rem;
   height: 24rem;
-  border-radius: 0;
+  // border-radius: 0;
   border-bottom: 2px solid $first-color;
   transition: all 0.2s ease-in-out;
 
@@ -332,8 +332,7 @@ nav {
     font-weight: 400;
   }
 }
-.card-item:hover,
-.skill:hover {
+.card-item:hover {
   transform: scale(1.1);
 }
 // Akhir Portfolio Section
@@ -345,13 +344,127 @@ nav {
   .skill {
     transition: all 0.2s ease-in-out;
   }
+
+  .skill:hover {
+    background-color: $first-color;
+  }
 }
 // Akhir Skill Section
 
+// Skill Section
 #contact {
-  width: 100%;
-  height: 100vh;
+  min-height: 75vh;
+
+  input,
+  textarea {
+    outline: 0;
+    background-color: transparent;
+    color: $light-color;
+    border-bottom: 2px solid $first-color;
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+  }
+
+  input:-webkit-autofill,
+  input:-webkit-autofill:focus {
+    box-shadow: 0 0 0 1000px $first-color inset;
+    -webkit-text-fill-color: $light-color !important;
+  }
+
+  input:focus,
+  textarea:focus {
+    background-color: transparent;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: $light-color;
+    opacity: 0.8;
+  }
+
+  textarea {
+    width: 100%;
+    height: 100px;
+  }
+
+  .submit {
+    width: 200px;
+    height: 55px;
+    color: $first-color;
+    font-size: 1.2rem;
+    font-weight: 400;
+    box-shadow: inset 0 0 0 0 $first-color;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .submit:hover {
+    color: $bg-color;
+    box-shadow: inset 0 -500px 0 0 $first-color;
+  }
+
+  .contact-icon {
+    width: 8rem;
+    height: 8rem;
+    cursor: pointer;
+    font-size: 3rem;
+    color: $first-color;
+    box-shadow: inset 0 0 0 0 $first-color;
+    transition: all 0.4s ease-in-out;
+
+    &:hover {
+      background-color: $first-color;
+      color: $bg-color;
+      box-shadow: inset 0 -500px 0 0 $first-color;
+    }
+  }
 }
+// Akhir Skill Section
+
+// Footer
+#footer {
+  height: 30vh;
+
+  .footer-container {
+    .social-media {
+      width: 4rem;
+      height: 4rem;
+      border: 2px solid $first-color;
+      border-radius: 50%;
+      transition: all 0.2s ease-in-out;
+
+      &:hover {
+        background-color: $first-color;
+
+        a {
+          color: $bg-color;
+        }
+      }
+
+      a {
+        font-size: 2rem;
+        color: $first-color;
+        transition: all 0.2s ease-in-out;
+      }
+    }
+  }
+
+  .copyright {
+    p {
+      font-size: 1.1rem;
+
+      i {
+        color: $first-color;
+      }
+
+      span {
+        font-weight: 600;
+        color: $first-color;
+      }
+    }
+  }
+}
+// Akhir Footer
 
 // Responsive
 // Phone
@@ -396,8 +509,20 @@ nav {
   }
   // Akhir About Section
 
-  // Portfolio Section
-  // Akhir Portfolio Section
+  // contact Section
+  .form-container {
+    margin-bottom: 2rem;
+  }
+
+  .contact-container {
+    flex-direction: row !important;
+
+    .contact-icon {
+      margin: 0 !important;
+    }
+  }
+
+  // Akhir contact Section
 }
 // Akhir Phone
 
