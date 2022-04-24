@@ -57,7 +57,7 @@ particlesJS(
         anim: {
           enable: false,
           speed: 40,
-          size_min: 0.9,
+          size_min: 5,
           sync: false,
         },
       },

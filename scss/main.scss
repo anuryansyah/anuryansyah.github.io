@@ -444,20 +444,13 @@ nav {
       height: 4rem;
       border: 2px solid $first-color;
       border-radius: 50%;
+      font-size: 2rem;
+      color: $first-color;
       transition: all 0.2s ease-in-out;
 
       &:hover {
         background-color: $first-color;
-
-        a {
-          color: $bg-color;
-        }
-      }
-
-      a {
-        font-size: 2rem;
-        color: $first-color;
-        transition: all 0.2s ease-in-out;
+        color: $bg-color;
       }
     }
   }

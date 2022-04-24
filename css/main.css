@@ -495,23 +495,15 @@ nav .hamburger .line:nth-child(2) {
   height: 4rem;
   border: 2px solid #ff0066;
   border-radius: 50%;
+  font-size: 2rem;
+  color: #ff0066;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
 
 #footer .footer-container .social-media:hover {
   background-color: #ff0066;
-}
-
-#footer .footer-container .social-media:hover a {
   color: #12122c;
-}
-
-#footer .footer-container .social-media a {
-  font-size: 2rem;
-  color: #ff0066;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 
 #footer .copyright p {
