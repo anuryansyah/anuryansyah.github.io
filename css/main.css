@@ -454,6 +454,19 @@ nav .hamburger .line:nth-child(2) {
           box-shadow: inset 0 -500px 0 0 #ff0066;
 }
 
+#contact .spinner-grow {
+  color: #ff0066;
+}
+
+#contact .alert {
+  background-color: #ff0066;
+  font-weight: 400;
+}
+
+#contact .alert span {
+  font-weight: 600;
+}
+
 #contact .contact-icon {
   width: 8rem;
   height: 8rem;
@@ -467,8 +480,8 @@ nav .hamburger .line:nth-child(2) {
 }
 
 #contact .contact-icon:hover {
-  background-color: #ff0066;
   color: #12122c;
+  background-color: #ff0066;
   -webkit-box-shadow: inset 0 -500px 0 0 #ff0066;
           box-shadow: inset 0 -500px 0 0 #ff0066;
 }
@@ -553,17 +566,32 @@ nav .hamburger .line:nth-child(2) {
     width: 100%;
     text-align: justify;
   }
-  .form-container {
+  #contact .form-container {
     margin-bottom: 2rem;
   }
-  .contact-container {
+  #contact .contact-container {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
         -ms-flex-direction: row !important;
             flex-direction: row !important;
   }
-  .contact-container .contact-icon {
+  #contact .contact-container .contact-icon {
     margin: 0 !important;
+    width: 6rem !important;
+    height: 6rem !important;
+  }
+  #contact .contact-container .contact-icon i {
+    font-size: 2rem !important;
+  }
+  #contact .submit {
+    width: 100% !important;
+  }
+  .footer-container .social-media {
+    width: 3rem !important;
+    height: 3rem !important;
+  }
+  .footer-container .social-media a {
+    font-size: 1.5rem !important;
   }
 }
 

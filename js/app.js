@@ -76,3 +76,28 @@ AOS.init({
   // once: true,
   // delay: 1000,
 });
+
+// Contact Form
+const scriptURL = 'https://script.google.com/macros/s/AKfycbyA0Nt5_SUmAl7wa78ovScuO4xgQi3VGFvwB4HQk-oPOwwInBiFa3OPjQBxRKROFqvZvg/exec';
+const form = document.forms['alif-contact-form'];
+const loading = document.querySelector('.spinner-grow');
+const sukses = document.querySelector('.sukses');
+const gagal = document.querySelector('.gagal');
+
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  loading.classList.toggle('d-none');
+  fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    .then((response) => {
+      loading.classList.toggle('d-none');
+      sukses.classList.toggle('d-none');
+      form.reset();
+      console.log('Success!', response);
+    })
+    .catch((error) => {
+      gagal.classList.toggle('d-none');
+      form.reset();
+      console.error('Error!', error.message);
+    });
+});
+// Akhir Contact Form
