@@ -173,6 +173,10 @@ nav .hamburger .line:nth-child(2) {
   width: 55%;
 }
 
+.hero-section .ilustrasi img {
+  width: 70%;
+}
+
 .hero-section .greet {
   width: 45%;
 }
